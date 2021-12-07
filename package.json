@@ -23,5 +23,8 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "mobile-drag-drop": "^2.3.0-rc.2"
+  }
 }
