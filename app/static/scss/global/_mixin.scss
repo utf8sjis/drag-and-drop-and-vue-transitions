@@ -1,0 +1,15 @@
+@use 'variable' as *;
+
+/* flexによる中央寄せ */
+@mixin flexCentering($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* メディアクエリ */
+@mixin mediaQuery($breakpoint: $phone) {
+  @media (max-width: ($breakpoint)) {
+    @content;
+  }
+}
