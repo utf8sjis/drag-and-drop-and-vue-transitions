@@ -6,6 +6,9 @@
   grid-template-rows: repeat(2, 80px);
   grid-template-columns: repeat(4, 80px);
   margin: 50px;
+  @include g.mediaQuery() {
+    margin: 30px;
+  }
 
   &--move {
     transition: transform 0.8s;
