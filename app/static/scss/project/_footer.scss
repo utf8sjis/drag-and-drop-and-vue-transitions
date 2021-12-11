@@ -1,0 +1,11 @@
+/* footer */
+@use '../global' as g;
+
+.footer {
+  @include g.flexCentering();
+  padding: 50px;
+  background: lightgray;
+  @include g.mediaQuery() {
+    padding: 30px;
+  }
+}
