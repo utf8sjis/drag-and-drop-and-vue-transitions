@@ -1,28 +1,32 @@
 {
-  "_from": "mobile-drag-drop",
+  "_args": [
+    [
+      "mobile-drag-drop@2.3.0-rc.2",
+      "/mnt/c/Users/japon/Desktop/workspace/web/public/utf8sjis/drag-and-drop-and-vue-transitions"
+    ]
+  ],
+  "_from": "mobile-drag-drop@2.3.0-rc.2",
   "_id": "mobile-drag-drop@2.3.0-rc.2",
   "_inBundle": false,
   "_integrity": "sha512-4rHP0PUeWkSp0O3waNHPQZCHeZnLu8bE59MerWOnZJ249BCyICXL1WWp3xqkMKXEDFYuhfk3bS42bKB9IeN9uw==",
   "_location": "/mobile-drag-drop",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "mobile-drag-drop",
+    "raw": "mobile-drag-drop@2.3.0-rc.2",
     "name": "mobile-drag-drop",
     "escapedName": "mobile-drag-drop",
-    "rawSpec": "",
+    "rawSpec": "2.3.0-rc.2",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "2.3.0-rc.2"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/mobile-drag-drop/-/mobile-drag-drop-2.3.0-rc.2.tgz",
-  "_shasum": "00d6e85e04512a620fd5357366e8786bd29aa7aa",
-  "_spec": "mobile-drag-drop",
-  "_where": "/mnt/c/Users/japon/Desktop/workspace/web/local/palette",
+  "_spec": "2.3.0-rc.2",
+  "_where": "/mnt/c/Users/japon/Desktop/workspace/web/public/utf8sjis/drag-and-drop-and-vue-transitions",
   "author": {
     "name": "Tim Ruffles",
     "email": "me@truffles.me.uk"
@@ -30,7 +34,6 @@
   "bugs": {
     "url": "https://github.com/timruffles/ios-html5-drag-drop-shim/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Stefan Steinhart",
@@ -73,7 +76,6 @@
       "email": "simon@altschuler.dk"
     }
   ],
-  "deprecated": false,
   "description": "Polyfill for making HTML5 drag and drop possible in all browsers.",
   "devDependencies": {
     "grunt": "^1.0.1",

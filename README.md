@@ -1,3 +1,3 @@
-# palette
+# drag-and-drop-and-vue-transitions
 
-This repository is for the website [gensokanji.netlify.app/palette](https://gensokanji.netlify.app/palette).
+This is a sample of a simple web application that uses the Drag and Drop API and Vue's List Transitions.
