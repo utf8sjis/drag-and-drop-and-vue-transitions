@@ -1,4 +1,3 @@
-/* drag-list */
 @use '../global' as g;
 
 .drag-list {
@@ -9,11 +8,10 @@
   @include g.mediaQuery() {
     margin: 30px;
   }
-
   &--move {
     transition: transform 0.8s;
   }
-  
+
   li {
     cursor: pointer;
     @include g.flexCentering();

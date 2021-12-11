@@ -1,4 +1,4 @@
-import './mobile-drag-drop-polyfill.js'
+import './mobile-drag-drop-polyfill.js';
 
 const Demo = {
   data: function () {
@@ -16,22 +16,32 @@ const Demo = {
   },
   mounted: function () {
     const items = this.items;
+    // li要素それぞれに各イベントのハンドラを設定
     document.querySelectorAll('.drag-list li').forEach((el) => {
+      // ドラッグの開始
       el.ondragstart = function (ev) {
+        // ドラッグ元のli要素のidをセット
         ev.dataTransfer.setData('text/plain', ev.target.id);
       };
+      // ドラッグ中
       el.ondragover = function (ev) {
         ev.preventDefault();
       };
+      // ドロップ
       el.ondrop = function (ev) {
         ev.preventDefault();
-        const newIndex = items.findIndex(
+        // ドラッグ元のli要素に対応するオブジェクトのインデクスの取得
+        const dragIndex = items.findIndex(
           (item) => item.id === ev.dataTransfer.getData('text/plain')
         );
-        const oldIndex = items.findIndex((item) => item.id === this.id);
-        items[newIndex] = [
-          items[oldIndex],
-          (items[oldIndex] = items[newIndex]),
+        // ドロップ先のli要素に対応するオブジェクトのインデクスの取得
+        const dropIndex = items.findIndex(
+          (item) => item.id === this.id
+        );
+        // ドラッグ元とドロップ先のオブジェクトの交換
+        items[dragIndex] = [
+          items[dropIndex],
+          (items[dropIndex] = items[dragIndex]),
         ][0];
       };
     });
