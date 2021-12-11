@@ -31,17 +31,17 @@ const Demo = {
       el.ondrop = function (ev) {
         ev.preventDefault();
         // ドラッグ元のli要素に対応するオブジェクトのインデクスの取得
-        const newIndex = items.findIndex(
+        const dragIndex = items.findIndex(
           (item) => item.id === ev.dataTransfer.getData('text/plain')
         );
         // ドロップ先のli要素に対応するオブジェクトのインデクスの取得
-        const oldIndex = items.findIndex(
+        const dropIndex = items.findIndex(
           (item) => item.id === this.id
         );
         // ドラッグ元とドロップ先のオブジェクトの交換
-        items[newIndex] = [
-          items[oldIndex],
-          (items[oldIndex] = items[newIndex]),
+        items[dragIndex] = [
+          items[dropIndex],
+          (items[dropIndex] = items[dragIndex]),
         ][0];
       };
     });
