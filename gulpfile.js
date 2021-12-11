@@ -48,14 +48,14 @@ const minifyCSS = () =>
 const minifyHTML = () =>
   gulp.src('app/*.html')
     .pipe(replace(
-      '<script src="https://unpkg.com/vue@3.2.23/dist/vue.global.js"></script>',
-      '<script src="https://unpkg.com/vue@3.2.23/dist/vue.global.prod.js"></script>'))
+      'https://unpkg.com/vue@3.2.23/dist/vue.global.js',
+      'https://unpkg.com/vue@3.2.23/dist/vue.global.prod.js'))
     .pipe(replace(
-      '<script type="module" src="static/js/main.js"></script>',
-      '<script type="module" src="static/js/main.min.js"></script>'))
+      './static/js/main.js',
+      './static/js/main.min.js'))
     .pipe(replace(
-      '<link rel="stylesheet" href="static/css/style.css">',
-      '<link rel="stylesheet" href="static/css/style.min.css">'))
+      './static/css/style.css',
+      './static/css/style.min.css'))
     .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true,

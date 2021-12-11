@@ -1,3 +1,5 @@
+import './mobile-drag-drop-polyfill.js'
+
 const Demo = {
   data: function () {
     return {

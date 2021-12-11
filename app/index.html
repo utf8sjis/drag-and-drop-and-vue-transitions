@@ -3,11 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>palette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop API and Vue's List Transitions</title>
+
+  <!-- CDN -->
   <script src="https://unpkg.com/vue@3.2.23/dist/vue.global.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.0/destyle.css">
-  <link rel="stylesheet" href="static/css/style.css">
-  <script type="module" src="static/js/main.js"></script>
+
+  <!-- ライブラリ -->
+  <link rel="stylesheet" href="./static/lib/mobile-drag-drop/default.css">
+  <script src="./static/lib/mobile-drag-drop/index.min.js"></script>
+  <script src="./static/lib/mobile-drag-drop/scroll-behaviour.min.js"></script>
+
+  <!-- ローカル -->
+  <link rel="stylesheet" href="./static/css/style.css">
+  <script defer type="module" src="./static/js/main.js"></script>
 </head>
 
 <body>
@@ -18,4 +28,5 @@
       </li>
     </transition-group>
   </div>
+  <footer class="footer">drag-and-drop-and-vue-transitions v1.0.0</footer>
 </body>

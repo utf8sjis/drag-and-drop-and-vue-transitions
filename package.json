@@ -1,5 +1,5 @@
 {
-  "name": "pallet",
+  "name": "drag-and-drop-and-vue-transitions",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
@@ -23,5 +23,8 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "mobile-drag-drop": "^2.3.0-rc.2"
+  }
 }
