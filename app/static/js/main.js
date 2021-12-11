@@ -1,4 +1,4 @@
-import './mobile-drag-drop-polyfill.js'
+import './mobile-drag-drop-polyfill.js';
 
 const Demo = {
   data: function () {

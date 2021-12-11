@@ -4,9 +4,11 @@
 */
 
 MobileDragDrop.polyfill({
-  dragImageTranslateOverride: MobileDragDrop.scrollBehaviourDragImageTranslateOverride
+  dragImageTranslateOverride: MobileDragDrop.scrollBehaviourDragImageTranslateOverride,
 });
 
-document.addEventListener('dragenter', (event) => {event.preventDefault();});
+document.addEventListener('dragenter', (ev) => {
+  ev.preventDefault();
+});
 
 window.addEventListener('touchmove', () => {});
